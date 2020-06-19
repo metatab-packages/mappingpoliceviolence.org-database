@@ -1,0 +1,59 @@
+Declare,metatab-latest
+Title,Mapping Police Violence
+Description,"Reports of people killed by police, compiled from multiple sources."
+Identifier,490c8222-ba85-4320-83a7-60faaeab154a
+Name,mappingpoliceviolence.org-database-1.1.1
+Dataset,database
+Origin,mappingpoliceviolence.org
+Time,
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2020-06-19T18:08:34
+Modified,2020-06-19T18:14:00
+Giturl,https://github.com/metatab-packages/policedata-collection.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+
+Section,References,Name,Description,
+
+Section,Resources,Name,Description,
+Datafile,https://mappingpoliceviolence.org/s/MPVDatasetDownload.xlsx,mpv_database,Mapping Police Violence,
+
+Section,Schema,DataType,AltName,Description,Has_Codes,Transform
+Table,mpv_database,,,,,
+Table.Column,Victim's name,text,victim_s_name,,,
+Table.Column,Victim's age,integer,victim_s_age,,T,
+Table.Column,Victim's gender,string,victim_s_gender,,,
+Table.Column,Victim's race,string,victim_s_race,,,
+Table.Column,URL of image of victim,text,url_of_image_of_victim,,,
+Table.Column,Date of Incident (month/day/year),date,date_of_incident_month_day_year,,,^excel_date
+Table.Column,Street Address of Incident,text,street_address_of_incident,,,
+Table.Column,City,text,city,,,
+Table.Column,State,string,state,,,
+Table.Column,Zipcode,integer,zipcode,,,
+Table.Column,County,text,county,,,
+Table.Column,Agency responsible for death,text,agency_responsible_for_death,,,
+Table.Column,Cause of death,string,cause_of_death,,,
+Table.Column,A brief description of the circumstances surrounding the death,text,a_brief_description_of_the_circumstances_surrounding_the_death,,,
+Table.Column,Official disposition of death (justified or other),string,official_disposition_of_death_justified_or_other,,,
+Table.Column,Criminal Charges?,string,criminal_charges,,,
+Table.Column,Link to news article or photo of official document,text,link_to_news_article_or_photo_of_official_document,,,
+Table.Column,Symptoms of mental illness?,string,symptoms_of_mental_illness,,,
+Table.Column,Unarmed,string,unarmed,,,
+Table.Column,Alleged Weapon (Source: WaPo),string,alleged_weapon_source_wapo,,,
+Table.Column,Alleged Threat Level (Source: WaPo),string,alleged_threat_level_source_wapo,,,
+Table.Column,Fleeing (Source: WaPo),string,fleeing_source_wapo,,,
+Table.Column,Body Camera (Source: WaPo),string,body_camera_source_wapo,,,
+Table.Column,WaPo ID (If included in WaPo database),integer,wapo_id_if_included_in_wapo_database,,,
+Table.Column,Off-Duty Killing?,string,off_duty_killing,,,
+Table.Column,Geography (via Trulia methodology based on zipcode population density: http://jedkolko.com/wp-content/uploads/2015/05/full-ZCTA-urban-suburban-rural-classification.xlsx ),string,geography_via_trulia_methodology_based_on_zipcode_population_density_http_jedkolko_com_wp_content_uploads_2015_05_full_zcta_urban_suburban_rural_classification_xlsx,,,
+Table.Column,ID,integer,id,,,
